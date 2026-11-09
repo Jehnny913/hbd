@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Kuchupuchu-д зориулсан төрсөн өдрийн бяцхан гэнэтийн бэлэг.">
+    <title>Kuchupuchu-д — Төрсөн өдрийн мэнд!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body data-view="home">
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Kuchupuchu-ийн төрсөн өдрийн нүүр хуудас"><span class="brand-star">✦</span> KUCHUPUCHU</a>
+        <nav aria-label="Үндсэн цэс">
+          <a href="#home">Happy Birthday</a>
+          <a href="#surprise">Your Surprise</a>
+          <a href="#message">Message</a>
+          <a href="#flowers">Flowers</a>
+          <a href="#cake">Cake</a>
+        </nav>
+        <button class="music-button" id="music-toggle" type="button" aria-pressed="false">
+          <span class="music-icon" aria-hidden="true">♫</span>
+          <span id="music-label">Music</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <h1>HAPPY BIRTHDAY</h1>
+            <div class="cat-scene">
+              <span class="paw paw-one" aria-hidden="true">🐾</span>
+              <span class="paw paw-two" aria-hidden="true">🐾</span>
+              <span class="paw paw-three" aria-hidden="true">🐾</span>
+              <div class="cat-image-frame">
+                <img class="party-cat" src="images/birthday-cat.png" alt="Цэнхэр баярын малгайтай хөөрхөн саарал муур">
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-scene" aria-label="Баярын бөмбөлгүүдийн дунд байгаа цэнхэр бэлэг">
+            <img class="gift-backdrop" src="images/birthday-gift-background.png" alt="" aria-hidden="true">
+            <a class="birthday-gift-link" href="#surprise" aria-label="Your Surprise-ийг нээх">
+              <img class="birthday-gift" src="images/birthday-gift.png" alt="Цэнхэр туузтай цайвар хөх төрсөн өдрийн бэлэг">
+            </a>
+            <a class="open-gift-button" href="#surprise">Open me</a>
+          </div>
+        </section>
+
+        <section class="cake-section" id="cake" aria-labelledby="cake-title">
+          <h2 class="cake-title" id="cake-title">A Birthday Just for You!</h2>
+          <div class="cake-gallery">
+            <figure class="cake-scene">
+              <img src="images/cake-scene.png" alt="Хоёр давхар цэнхэр төрсөн өдрийн бялуу, лаа болон баярын чимэглэлтэй ширээ">
+            </figure>
+            <a class="cake-record" href="#birthday-reveal" aria-label="Click Me — төрсөн өдрийн мэндчилгээг нээх">
+              <img src="images/cake-click-me.png" alt="Цэнхэр жаазтай малгайтай муур болон Click Me гэсэн пянз">
+              <span class="cake-record-cta">Click Me <span aria-hidden="true">♡</span></span>
+            </a>
+          </div>
+          <div class="countdown-section">
+            <div class="countdown-heading">
+              <span class="section-kicker">ХУАНЛИ ДЭЭРХ ОНЦГОЙ ӨДӨР</span>
+              <h3 id="countdown-title">Дараагийн баяр хүртэл</h3>
+            </div>
+            <div class="countdown" id="countdown" data-birthday="1999-11-10" aria-live="polite">
+              <div class="time-card"><strong id="days">—</strong><span>өдөр</span></div>
+              <span class="time-dot" aria-hidden="true">:</span>
+              <div class="time-card"><strong id="hours">—</strong><span>цаг</span></div>
+              <span class="time-dot" aria-hidden="true">:</span>
+              <div class="time-card"><strong id="minutes">—</strong><span>минут</span></div>
+              <span class="time-dot" aria-hidden="true">:</span>
+              <div class="time-card"><strong id="seconds">—</strong><span>секунд</span></div>
+            </div>
+            <p class="countdown-caption">Жил бүрийн 11-р сарын 10-нд чамайг тэмдэглэнэ <span aria-hidden="true">♡</span></p>
+          </div>
+          <a class="message-back-link" href="#surprise">← Your Surprise</a>
+        </section>
+
+        <section class="memories-section" id="memories">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">ЧИНИЙ ӨДӨР БҮРТ</span>
+              <h2>Чамд хайртай жижиг зүйлс</h2>
+            </div>
+            <span class="heading-doodle" aria-hidden="true">✿</span>
+          </div>
+          <div class="memory-grid">
+            <article class="memory-card memory-pink">
+              <div class="memory-art art-sunrise" aria-hidden="true"><span>☀</span><i></i><b></b></div>
+              <div class="memory-text"><span class="memory-number">01 — ӨГЛӨӨ</span><h3>Чиний инээмсэглэл</h3><p>Өглөөний кофеноос ч илүү сэргээдэг.</p></div>
+              <span class="card-heart" aria-hidden="true">♡</span>
+            </article>
+            <article class="memory-card memory-yellow">
+              <div class="memory-art art-flower" aria-hidden="true"><span>✿</span><i>✧</i><b>✧</b></div>
+              <div class="memory-text"><span class="memory-number">02 — ҮРГЭЛЖ</span><h3>Чиний сайхан сэтгэл</h3><p>Ойр байгаа бүхэнд дулаан мэдрүүлдэг.</p></div>
+              <span class="card-heart" aria-hidden="true">♡</span>
+            </article>
+            <article class="memory-card memory-blue">
+              <div class="memory-art art-sparkles" aria-hidden="true"><span>✦</span><i>✧</i><b>✦</b><em>✧</em></div>
+              <div class="memory-text"><span class="memory-number">03 — ӨНӨӨДӨР</span><h3>Зүгээр л чи өөрөө</h3><p>Чи байгаагаараа л хамгийн онцгой.</p></div>
+              <span class="card-heart" aria-hidden="true">♡</span>
+            </article>
+          </div>
+          <p class="photo-hint">Эдгээр жижигхэн картуудыг та хоёрын зураг, дурсамжаар сольж болно. ♡</p>
+        </section>
+
+        <section class="surprise-section" id="surprise">
+          <div class="surprise-card">
+            <h2 class="surprise-title">A Birthday Surprise Just for You!</h2>
+            <div class="surprise-options" aria-label="Гэнэтийн бэлгээ сонгоорой">
+              <a class="surprise-choice" href="#message">
+                <span class="choice-illustration">
+                  <img src="images/surprise-letter.png" alt="Захидал, ил захидал болон эрвээхэйтэй чимэглэсэн жааз">
+                </span>
+                <span class="choice-label">Letter</span>
+              </a>
+              <a class="surprise-choice" href="#flowers">
+                <span class="choice-illustration">
+                  <img src="images/surprise-flowers.png" alt="Цагаан цэцгийн баглаатай чимэглэсэн жааз">
+                </span>
+                <span class="choice-label">Flowers</span>
+              </a>
+              <a class="surprise-choice" href="#cake">
+                <span class="choice-illustration">
+                  <img src="images/surprise-cake.png" alt="Ягаан бялуутай чимэглэсэн жааз">
+                </span>
+                <span class="choice-label">Cake</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="flowers-section" id="flowers" aria-labelledby="flowers-title">
+          <div class="flowers-card">
+            <div class="flowers-art">
+              <span class="flowers-dots" aria-hidden="true"></span>
+              <img src="images/surprise-flowers.png" alt="Цагаан цэцгийн баглаатай чимэглэсэн жааз">
+            </div>
+            <div class="flowers-message">
+              <h2 id="flowers-title">A little wish for you</h2>
+              <p>Like flowers, may your life always bloom with love, happiness, and beautiful moments.</p>
+            </div>
+          </div>
+          <a class="message-back-link" href="#surprise">← Your Surprise</a>
+        </section>
+
+        <section class="message-section" id="message" aria-labelledby="message-title">
+          <div class="message-card">
+            <h2 class="surprise-title" id="message-title">A Message Just for You!</h2>
+            <div class="letter-paper">
+              <p class="letter-greeting">Хөөрхөн Kuchupuchu минь,</p>
+              <p>Шинэ нас чинь инээд хөөр, гэнэтийн сайхан учрал, биелэх мөрөөдлөөр дүүрэн байг. Өөрийгөө үргэлж хайрлаж, хүссэн зүйлдээ зоригтой хүрээрэй. Чи бодсоноосоо ч илүү гайхалтай хүн шүү.</p>
+              <p>Өнөөдөр чамайг эрхлүүлэх өдөр — сайхан баярлаарай! ♡</p>
+              <p class="letter-signoff">хайрын 28 насны төрсөн өдрийг заавал үзнэ гэсэн амлалт болголоо энэхүү жижиг мэндчилгээгээ ✿</p>
+            </div>
+            <a class="message-back-link" href="#surprise">← Your Surprise</a>
+          </div>
+        </section>
+
+        <section class="birthday-reveal" id="birthday-reveal" aria-labelledby="birthday-reveal-title">
+          <canvas class="love-rain" id="love-rain" aria-hidden="true"></canvas>
+          <div class="reveal-stage">
+            <p class="reveal-eyebrow">FROM SOMEONE FOR YOU</p>
+            <h2 class="reveal-message" id="birthday-reveal-title" aria-live="polite">3</h2>
+            <p class="reveal-caption">A little surprise, made just for you ♡</p>
+            <div class="reveal-actions">
+              <button class="reveal-replay" id="reveal-replay" type="button">Replay animation</button>
+              <a class="reveal-back" href="#cake">← Back to cake</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer"><span>made with ♡ for Kuchupuchu</span><span>Өнөөдөр чиний өдөр шүү!</span></footer>
+    </div>
+    <dialog class="music-dialog" id="music-dialog" aria-labelledby="music-dialog-title">
+      <div class="music-dialog-heading">
+        <div>
+          <h2 id="music-dialog-title">Stephen Sanchez</h2>
+          <p>Until I Found You</p>
+        </div>
+        <button class="music-close" id="music-close" type="button" aria-label="Хөгжим хаах">×</button>
+      </div>
+      <div class="music-player">
+        <iframe
+          id="music-player-frame"
+          title="Stephen Sanchez — Until I Found You (Official Video)"
+          allow="autoplay; encrypted-media; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <a class="music-source-link" href="https://www.youtube.com/watch?v=GxldQ9eX2wo" target="_blank" rel="noopener noreferrer">YouTube дээр нээх ↗</a>
+    </dialog>
+  </body>
+</html>
